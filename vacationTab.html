@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECA</title>
+    <link rel="icon" type="image/x-icon" href="/images/Group 1.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slides.css">
+    <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+<div class="facilities">
+    <div class="card">
+        
+        <div class="slideshow-container">
+            <div class="mySlides1 sld">
+                <img src="./images/nyungwe1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides1 sld">
+                <img src="./images/nyungwe2.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <h1>Nyungwe National Park</h1>
+        <p class="title">Located In Nyamagabe</p>
+        <p>Hotel,Travelling,Canopy walk</p>
+        <a href = "./login.php"><button>Book</button></a>
+        </div>
+
+    <div class="card">
+        
+        <div class="slideshow-container">
+            <div class="mySlides2 sld">
+                <img src="./images/akagera1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2 sld">
+                <img src="./images/akagera2.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <h1>Akagera National Park</h1>
+        <p class="title">Located In Kirehe</p>
+        <p>Hotel,Travelling</p>
+        <a href = "./login.php"><button>Book</button></a>
+        </div>
+
+    <div class="card">
+        
+        <div class="slideshow-container">
+            <div class="mySlides3  sld">
+                <img src="./images/gorilla2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides3 sld">
+                <img src="./images/gorilla1.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+        <h1>Volcano National Park</h1>
+        <p class="title">Located In Musanze</p>
+        <p>Hotel,Restaurant,Hiking</p>
+        <a href = "./login.php"><button>Book</button></a>
+        </div>
+</div>    
+<div class="facilities">
+    <div class="card">
+        
+        <div class="slideshow-container">
+            <div class="mySlides4 sld">
+                <img src="./images/gorilla-trekking (9).jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides4 sld">
+                <img src="./images/gorilla-trekking (10).jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+            </div>
+            <h1>Huye National Museum</h1>
+            <p class="title">Located In Huye</p>
+            <p>History</p>
+            <a href = "./login.php"><button>Book</button></a>
+        </div>
+
+    <div class="card">
+        
+        <div class="slideshow-container">
+                <div class="mySlides5 sld">
+                    <img src="./images/isubyo1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides5 sld">
+                    <img src="./images/isubyo2.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                </div>
+            <h1>Isubyo House Of Arts</h1>
+            <p class="title">Located In Kigali</p>
+            <p>Movie nights,Furniture arts</p>
+            <a href = "./login.php"><button>Book</button></a>
+        </div>
+
+    <div class="card">
+        
+        <div class="slideshow-container">
+            <div class="mySlides6 sld">
+                <img src="./images/umusambi1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides6 sld">
+                <img src="./images/umusambi2.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+        </div>
+        <h1>Umusambi Village</h1>
+        <p class="title">Located In Kigali,Kabuga</p>
+        <p>Motel,Travelling</p>
+        <a href = "./login.php"><button>Book</button></a>
+        </div>
+</div>
+<script>
+    let slideIndex = [1,1,1,1,1,1];
+    let slideId = ["mySlides1", "mySlides2","mySlides3","mySlides4","mySlides5","mySlides6"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    showSlides(1, 3);
+    showSlides(1, 4);
+    showSlides(1, 5);
+
+    function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}    
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    x[slideIndex[no]-1].style.display = "block";  
+    }
+
+</script>
+</body>
+</html>
