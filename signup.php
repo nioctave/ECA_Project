@@ -15,7 +15,7 @@
             SIGN UP TODAY FOR A FREE ACCOUNT.
         </h1>
         <h6>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.  
+            Sign Up for Eights Commission Agency now.  
         </h6>
 
         <div class="feedback-form">

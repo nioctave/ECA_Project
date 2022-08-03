@@ -15,7 +15,7 @@
             LOG IN
         </h1>
         <h6>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.  
+            Sign in for access to book.  
         </h6>
 
         <div class="feedback-form">
